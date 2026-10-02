@@ -215,10 +215,18 @@
   font-size: 16px;
   width: 100%;
   box-sizing: border-box;
-
-  /* Força a barra a ficar exatamente no topo absoluto da tela */
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 99999; 
+  z-index: 99999;
+}
+
+/* Empurra o menu principal para baixo para dar espaço à barra vermelha */
+.site-header {
+  top: 44px !important; 
+}
+
+/* Ajusta o espaçamento do topo da página para compensar o menu */
+.hero {
+  padding-top: 140px !important; 
 }
